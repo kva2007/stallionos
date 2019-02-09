@@ -1,0 +1,7 @@
+{
+  "name": "stallionos",
+  "version": "0.0.1",
+  "dependencies": {
+    "multiscroll.js": "0.1.7"
+  }
+}

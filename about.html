@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>About Stallion OS</title>
+    <meta name="Resource-type" content="Document" />
+    <meta name="description" content="Linux desktop OS">
+    <meta content="images/cover.jpg" property="og:image"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter31711036 = new Ya.Metrika({
+                        id:31711036,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/31711036" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- GOOGLE ANALYTIC -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-64424292-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- GOOGLE ANALYTIC --->
+    <!--[if IE]>
+    <script type="text/javascript">
+        var console = { log: function() {} };
+    </script>
+    <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="vendor/bower_components/multiscroll.js/jquery.multiscroll.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#myContainer').multiscroll({
+                sectionsColor: ['#5ad0ff', '#000', '#ffdd00'],
+                anchors: ['first', 'second', 'third'],
+                menu: '#menu',
+                navigation: true,
+                navigationTooltips: ['First', 'Second', 'Third'],
+
+                afterLoad: function(anchor, index){
+                    if(index==2 || index == 3){
+                        $('#infoMenu li a').css('color', '#f2f2f2');
+                    }
+                    if(index==1){
+                        $('#infoMenu li a').css('color', '#333');
+                    }
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<ul id="menu">
+    <li data-menuanchor="first" class="active"><a href="#first">Development</a></li>
+    <li data-menuanchor="second"><a href="#second">About OS</a></li>
+</ul>
+
+<div id="myContainer">
+
+    <div class="ms-left">
+        <div class="ms-section section1">
+            <!--<div class="graduated"></div>-->
+            <div class="fullscreen">
+                <!--
+                <h1>multiScroll.js</h1>
+                <h2>Create divided multi-scrolling pages.</h2>
+
+                <br />-->
+                <img src="images/Second.JPG" alt="foto" height="400" width="300">
+                <br>
+                <h1>About the developer</h1>
+                <h4>Stallion OS is made and maintained by one person and the developer welcomes any help and donations from the community.</h4>
+                <h4>
+                    It was given free programming cloud infrastructure by Microsoft in the form of Microsoft Azure Bizspark subscription.
+                </h4>
+
+
+            </div>
+        </div>
+
+        <div class="ms-section section2">
+
+            <div class="content">
+                <h1>A brief description</h1>
+                <h3>Founded in 2014, Stallion OS is an independent project and an effort to bring a free, open-source and safe operating system, which would not expect the user to be able to use command line interface. Stallion OS started as an effort to understand how software communicates to hardware and then became a full-time hobby. Its aim is to create a stable operating system, which would be free of political or profit-motivated interest. All of us are fed up with the need to configure an operating system when it is installed. With Stallion OS, there is no need to install any software as it runs right out of the box with the minimum pack of software a person might need. This system can be useful for corporate clients as it is easy to install and completely license free so there is no need to hire IT professionals to perform installation. Stallion OS is fully independent and forever free project. It is also a multi-national project</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="ms-right">
+        <div class="ms-section section1">
+        </div>
+
+        <div class="ms-section section2">
+            <div class="coffee"></div>
+        </div>
+    </div>
+</div>
+
+<div id="infoMenu">
+    <ul>
+        <li><a href="index.html">Main page</a></li>
+        <li><a href="library.html">Version library</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
